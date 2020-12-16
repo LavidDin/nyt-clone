@@ -1,8 +1,6 @@
 body {
   background-color: white;
   font-family: "nyt-franklin", helvetica, arial, sans-serif;
-  display: block;
-  height: 100vh;
   color: black;
   font-size: 1.1em;
 }
@@ -11,13 +9,19 @@ header {
   justify-content: space-between;
   padding: 4px 15px 2px;
   background-color: white;
-  height: 40px;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid #e2e2e2;
+  margin: 0 auto;
+  height: 36px;
+}
+.heading {
+  padding-top: 10px;
 }
 .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav {
   display: flex;
@@ -26,6 +30,9 @@ header {
 .nav-left {
   display: flex;
   align-items: center;
+}
+.nav-right {
+  padding-right: 30px;
 }
 .header-title {
   font-size: 0.9em;
@@ -56,7 +63,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.heading .social {
+.social {
   background-color: #e6e6e6;
   border-radius: 50%;
 }
@@ -66,6 +73,10 @@ h1 {
   line-height: 3rem;
   font-weight: 600;
   font-style: italic;
+}
+h2 {
+  font-family: 'Charm', cursive;
+  font-weight: Bold 700;
 }
 .full-page-image {
   width: 1200px;
@@ -104,7 +115,7 @@ h1 {
   font-weight: bold;
   font-size: 1.1em;
 }
-main {
+.main-content {
   width: 600px;
   margin: auto;
 }
@@ -175,4 +186,55 @@ p {
 }
 .video-embedding p span {
   font-size: 0.9rem;
+}
+.end-text {
+  font-size: 0.7em;
+  color: #818181;
+}
+.article-subheader {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+.btn {
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+  vertical-align: middle;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 11px 12px 8px;
+  text-transform: uppercase;
+  margin: 1px;
+}
+.comments {
+  width: 50%;
+}
+.comments-btn {
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  color: white;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0px;
+  text-transform: uppercase;
+  transition: background-color 0.6s ease 0s;
+  width: 100%;
+  cursor: pointer;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
 }
