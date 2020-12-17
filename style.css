@@ -28,17 +28,23 @@ header {
   align-items: center;
 }
 .nav-left {
-  display: flex;
+  display: flex-start;
   align-items: center;
 }
 .nav-center {
-  display: flex;
-  align-items: center;
+  margin-left: -15vw;
 }
 .nav-right {
   padding-right: 30px;
 }
+.nav:first-child {
+  margin-right: auto;
+}
+.nav:last-child {
+  margin-left: auto;
+}
 .header-title {
+  padding-left: 10px;
   font-size: 0.9em;
   font-weight: 1000;
   text-transform: uppercase;
@@ -234,6 +240,9 @@ h2 {
 @media only screen and (max-width: 1024px) {
   .nav-hidden {
     display: none;
+  }
+  .nav-center {
+    margin-left: 0px;
   }
   .main-content {
     padding: 10px;
